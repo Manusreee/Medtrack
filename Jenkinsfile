@@ -19,9 +19,10 @@ pipeline {
 
         stage('Frontend Check') {
             steps {
-                bat '"C:\\Program Files\\nodejs\\node.exe" --version'
-                bat '"C:\\Program Files\\nodejs\\npm.cmd" --version'
-                bat 'if exist Frontend\\package.json (echo Frontend OK) else (exit /b 1)'
+                 bat '"C:\\Program Files\\nodejs\\node.exe" --version'
+                 bat '"C:\\Program Files\\nodejs\\npm.cmd" --version'
+                 bat 'cd Frontend && "C:\\Program Files\\nodejs\\npm.cmd" ci'
+                 bat 'cd Frontend && "C:\\Program Files\\nodejs\\npm.cmd" run build'
             }
         }
 
