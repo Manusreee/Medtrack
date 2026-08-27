@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  margin: 0;
+}
+
+.container {
+  width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+input {
+  padding: 10px;
+  flex: 1;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.medicine {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 10px 0;
+  background: #f1f1f1;
+  border-radius: 8px;
+}
